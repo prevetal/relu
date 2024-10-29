@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Adapting the page for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Prohibition of phone number recognition -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Page title -->
+		<title>Заголовок страницы</title>
+
+		<!-- Meta description -->
+		<meta name="description" content="">
+
+		<!-- Meta Keywords -->
+		<meta name="keywords" content="">
+
+		<!-- Changing the color of the mobile browser panel -->
+		<meta name="msapplication-TileColor" content="#2850A8">
+		<meta name="theme-color" content="#2850A8">
+
+		<!-- Connecting fonts from Google -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+		<!-- Connecting style files -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1899.css" media="print, (max-width: 1899px)" async>
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="current_task">
+							<div class="current">
+								<div>Текущая задача: <b>1. Заполните расчетный лист в соответсвии с фармокопейной статьей</b></div>
+
+								<button class="start_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+									<span>начать</span>
+								</button>
+
+								<button class="spoler_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+								</button>
+							</div>
+
+							<div class="dropdown">
+								<div class="head">
+									<div class="title">Билет № 1</div>
+
+									<div class="count">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_tasks"></use></svg>
+										<span>6 задач</span>
+									</div>
+								</div>
+
+								<div class="items">
+									<div class="active">
+										<div class="number"></div>
+										<div>Начало</div>
+									</div>
+
+									<div class="active">
+										<div class="number"></div>
+										<div>Введение</div>
+									</div>
+
+									<div>
+										<div class="number"></div>
+										<div>Смешивание базовых инглидиентов</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="menu_wrap">
+							<button class="menu_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+								<span>меню</span>
+							</button>
+
+							<div class="menu">
+								<div class="menu_item">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu1"></use></svg>
+										<span><b>ФС</b></span>
+									</a>
+								</div>
+
+								<div class="divider"></div>
+
+								<div class="menu_item">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu2"></use></svg>
+										<span>Задание</span>
+									</a>
+								</div>
+
+								<div class="menu_item">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu3"></use></svg>
+										<span>Блокнот</span>
+									</a>
+								</div>
+
+								<div class="menu_item">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu4"></use></svg>
+										<span>Расчетный лист</span>
+									</a>
+								</div>
+
+								<div class="menu_item">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu5"></use></svg>
+										<span>Таблица менделеева</span>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<button class="select_room">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu6"></use></svg>
+							<span>Выбрать комнату</span>
+						</button>
+					</div>
+				</header>
+
+
+				<section class="warehouse">
+					<div class="back_btn">
+						<a href="/">
+							<div class="icon">
+								<svg><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+							</div>
+
+							<span>Назад</span>
+						</a>
+					</div>
+
+					<div class="image">
+						<img src="images/tmp/warehouse_img.jpg" alt="" loading="lazy" class="img">
+
+						<div class="point point1" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point2" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point3" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point4" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point5" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point6" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point7" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point8" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point9" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point10" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point11" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point12" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point13" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point14" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point15" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point16" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point17" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point18" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point19" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point20" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point21" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point22" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point23" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point24" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point25" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point26" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point27" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point28" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point29" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+						<div class="point point30" data-modal="point1_modal">
+							<div class="name">Колба мерная</div>
+						</div>
+
+
+						<div class="modal" id="point1_modal">
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="name">Вода очищенная</div>
+
+							<div class="overflow">
+								<div class="thumb">
+									<img src="images/tmp/point_modal_thumb.png" alt="" loading="lazy">
+								</div>
+
+								<div class="type">Тип: Посуда</div>
+							</div>
+
+							<div class="status">
+								<div class="label">Статус:</div>
+
+								<div class="val">Наполнено / Закрыто / Тарировано / Взвешено</div>
+							</div>
+
+							<div class="move">
+								<div class="label">Переместить в инивентарь?</div>
+
+								<div class="amount">
+									<button type="button" class="btn minus"></button>
+
+									<input type="text" value="1" class="input" data-minimum="1" data-maximum="999" data-step="1" data-unit="" maxlength="3">
+
+									<button type="button" class="btn plus"></button>
+
+									<div class="unit">(шт)</div>
+								</div>
+
+								<button class="submit_btn">Да</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="bottom">
+						<div class="cont">
+							<div class="data">
+								<div class="filter">
+									<div class="title">Фильтры</div>
+
+									<div class="field">
+										<label class="checkbox">
+											<input type="checkbox" name="group1" checked>
+
+											<div class="check"></div>
+
+											<div>тарированные</div>
+										</label>
+									</div>
+
+									<div class="field">
+										<label class="checkbox">
+											<input type="checkbox" name="group1" checked>
+
+											<div class="check"></div>
+
+											<div>взвешенные</div>
+										</label>
+									</div>
+								</div>
+
+								<div class="swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="item">
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb1.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Мерный цилиндр</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item">
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb2.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Закрытый бюкс</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb3.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Мерная колба</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item">
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb4.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Емкость воды очищ</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item">
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb5.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Крышка бюкса</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item">
+												<div class="icons">
+													<div>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_scales"></use></svg>
+													</div>
+												</div>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb6.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Открытый бюкс</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item">
+												<div class="icons">
+													<div>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_scales"></use></svg>
+													</div>
+
+													<div>
+														<img src="images/ic_drop.png" alt="" class="icon" loading="lazy">
+													</div>
+												</div>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb6.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Открытый бюкс</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item">
+												<div class="icons">
+													<div>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_scales"></use></svg>
+													</div>
+												</div>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb6.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Открытый бюкс</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item">
+												<div class="icons">
+													<div>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_scales"></use></svg>
+													</div>
+
+													<div>
+														<img src="images/ic_drop.png" alt="" class="icon" loading="lazy">
+													</div>
+												</div>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb6.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Открытый бюкс</div>
+											</div>
+										</div>
+									</div>
+
+									<button class="swiper-button-prev">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</button>
+
+									<button class="swiper-button-next">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+		<!-- Connecting javascript files -->
+		<script src="js/jquery-3.6.3.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
