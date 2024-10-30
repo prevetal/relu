@@ -132,6 +132,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			if (_self.val() > maximum) _self.val(maximum)
 		})
 	})
+
+
+	// Home page
+	setHeight(document.querySelectorAll('.home_page .rooms a span'))
 })
 
 
@@ -144,6 +148,12 @@ window.addEventListener('resize', function () {
 	if (typeof WW !== 'undefined' && WW != windowW) {
 		// Overwrite window width
 		WW = window.innerWidth || document.clientWidth || BODY.clientWidth
+
+
+		// Home page
+		$('.home_page .rooms a span').forEach(el => el.height('auto'))
+
+		setHeight(document.querySelectorAll('.home_page .rooms a span'))
 
 
 		// Mob. version

@@ -1110,34 +1110,12 @@ header .select_room .icon
     width: 100%;
     padding: 40px 40px 164px 40px;
 
+    transition: background .2s linear;
     text-align: center;
     text-decoration: none;
 
     color: #fff;
-    background: rgba(0, 149, 255, .20);
-
-    mix-blend-mode: plus-lighter;
-}
-
-
-.home_page .rooms a:before,
-.home_page .rooms a:after
-{
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-
-    display: block;
-
-    width: 100%;
-    height: 100%;
-
-    content: '';
-    transition: opacity .2s linear;
-    pointer-events: none;
-
-    background: rgba(0, 0, 0, .20);
+    background: rgba(0, 48, 83, .64);
 }
 
 
@@ -1149,24 +1127,26 @@ header .select_room .icon
 
 .home_page .rooms a span
 {
-    display: inline-block;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     padding: 24px;
 
     transition: box-shadow .2s linear;
-    vertical-align: top;
 
     border-radius: 10px;
     background: #2850a8;
 }
 
 
-.home_page .rooms a:hover:before,
-.home_page .rooms a:hover:after
-{
-    opacity: 0;
-}
 
+.home_page .rooms a:hover
+{
+    background: transparent;
+}
 
 .home_page .rooms a:hover span
 {
