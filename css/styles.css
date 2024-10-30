@@ -1060,11 +1060,10 @@ header .select_room .icon
 {
     position: absolute;
     z-index: 3;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
 
     width: 100%;
-    padding: 20px 0;
 }
 
 
