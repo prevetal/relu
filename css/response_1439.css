@@ -31,4 +31,14 @@
     {
         right: 37.792%;
     }
+
+
+
+    /*---------------
+        Home page
+    ---------------*/
+    .home_page .rooms a
+    {
+        padding-bottom: 100px;
+    }
 }
