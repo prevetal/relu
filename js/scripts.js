@@ -4,12 +4,12 @@ BODY = document.getElementsByTagName('body')[0]
 
 
 document.addEventListener('DOMContentLoaded', function () {
-	// Products slider
-	const warehouseSliders = [],
-		warehouseSlider = document.querySelectorAll('.warehouse .swiper')
+	// Bottom panel
+	const bottomPanelSliders = [],
+		bottomPanelSlider = document.querySelectorAll('.bottom_panel .swiper')
 
-	warehouseSlider.forEach((el, i) => {
-		el.classList.add('warehouse_s' + i)
+	bottomPanelSlider.forEach((el, i) => {
+		el.classList.add('bottom_panel_s' + i)
 
 		let options = {
 			loop: false,
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		}
 
-		warehouseSliders.push(new Swiper('.warehouse_s' + i, options))
+		bottomPanelSliders.push(new Swiper('.bottom_panel_s' + i, options))
 	})
 
 
@@ -76,23 +76,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
-	// Warehouse points
-	$('.warehouse .image .point').click(function(e) {
+	// Bottom panel remove item
+	$('.bottom_panel .item .remove_btn').click(function(e) {
 		e.preventDefault()
+		e.stopPropagation()
 
-		let image = $('.warehouse .image'),
-			modal = $(this).data('modal')
-
-		image.find('.modal').hide()
-		image.find('#' + modal).fadeIn(300)
-	})
-
-	$('.warehouse .modal .close_btn').click(function(e) {
-		e.preventDefault()
-
-		let modal = $(this).closest('.modal')
-
-		modal.fadeOut(200)
 	})
 
 
@@ -136,6 +124,170 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Home page
 	setHeight(document.querySelectorAll('.home_page .rooms a span'))
+
+
+	// Weight - Right data - Remove item
+	$('.weight .right_data .item .remove_btn').click(function(e) {
+		e.preventDefault()
+		e.stopPropagation()
+
+	})
+
+
+	// Objec modal
+	$('.bottom_panel .item, .weight .right_data .item, .warehouse .image .point').click(function(e) {
+		e.preventDefault()
+
+		let modal = $(this).data('modal')
+
+		$('.object_modal').hide()
+		$('#' + modal).fadeIn(300)
+	})
+
+
+	$('.object_modal .interaction_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.object_modal').hide()
+		$('.weight .interaction_data').fadeIn(300)
+	})
+
+
+	$('.object_modal .close_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.object_modal').hide()
+	})
+
+
+	// Weight - Interaction data
+	$('.weight .interaction_data .close_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.weight .interaction_data').hide()
+	})
+
+
+	$('.weight .interaction_data .objects .move_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.weight .interaction_data .objects').toggleClass('reverse')
+	})
+
+
+	range1 = $('.interaction_data #range1').ionRangeSlider({
+		min: 0.001,
+		max: 0.01,
+		from: 0.001,
+		step: 0.001,
+		grid: true,
+		postfix: ' г',
+		onChange: data => {
+			$('.interaction_data .range1 input.from').val(data.from.toFixed(3))
+		},
+		onUpdate: data => {
+			$('.interaction_data .range1 input.from').val(data.from.toFixed(3))
+		}
+	}).data('ionRangeSlider')
+
+	$('.interaction_data .range1 .input').keyup(function () {
+		range1.update({
+			from: parseInt($('.interaction_data .range1 input.from').val())
+		})
+	})
+
+
+	range2 = $('.interaction_data #range2').ionRangeSlider({
+		min: 0.01,
+		max: 5.0,
+		from: 0.01,
+		step: 0.01,
+		grid: true,
+		postfix: ' г',
+		onChange: data => {
+			$('.interaction_data .range2 input.from').val(data.from.toFixed(2))
+		},
+		onUpdate: data => {
+			$('.interaction_data .range2 input.from').val(data.from.toFixed(2))
+		}
+	}).data('ionRangeSlider')
+
+	$('.interaction_data .range1 .input').keyup(function () {
+		range1.update({
+			from: parseInt($('.interaction_data .range2 input.from').val())
+		})
+	})
+
+
+	range3 = $('.interaction_data #range3').ionRangeSlider({
+		min: 0,
+		max: 100,
+		from: 0,
+		step: 1,
+		grid: true,
+		postfix: '%',
+		onChange: data => {
+			$('.interaction_data .range3 input.from').val(data.from)
+		},
+		onUpdate: data => {
+			$('.interaction_data .range3 input.from').val(data.from)
+		}
+	}).data('ionRangeSlider')
+
+	$('.interaction_data .range1 .input').keyup(function () {
+		range1.update({
+			from: parseInt($('.interaction_data .range3 input.from').val())
+		})
+	})
+
+
+	range4 = $('.interaction_data #range4').ionRangeSlider({
+		min: 0,
+		max: 50,
+		from: 0,
+		step: 0.0001,
+		grid: true,
+		onChange: data => {
+			$('.interaction_data .range4 input.from').val(data.from.toFixed(4))
+		},
+		onUpdate: data => {
+			$('.interaction_data .range4 input.from').val(data.from.toFixed(4))
+		}
+	}).data('ionRangeSlider')
+
+	$('.interaction_data .range1 .input').keyup(function () {
+		range1.update({
+			from: parseInt($('.interaction_data .range4 input.from').val())
+		})
+	})
+
+
+	range5 = $('.interaction_data #range5').ionRangeSlider({
+		min: 0,
+		max: 100,
+		from: 0,
+		step: 0.0001,
+		grid: true,
+		onChange: data => {
+			$('.interaction_data .range5 input.from').val(data.from.toFixed(4))
+		},
+		onUpdate: data => {
+			$('.interaction_data .range5 input.from').val(data.from.toFixed(4))
+		}
+	}).data('ionRangeSlider')
+
+	$('.interaction_data .range1 .input').keyup(function () {
+		range1.update({
+			from: parseInt($('.interaction_data .range5 input.from').val())
+		})
+	})
+
+
+	range6 = $('.interaction_data #range6').ionRangeSlider({
+		from: 0,
+		values: ['1/1000 Б', '1/100 Б', '1/50', '1/20', '1/10', '1/5', '1/2', '1'],
+		grid: true
+	}).data('ionRangeSlider')
 })
 
 

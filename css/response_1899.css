@@ -89,4 +89,125 @@
     {
         background: rgba(47, 94, 160, .11);
     }
+
+
+
+    /*------------
+        Weight
+    ------------*/
+    .weight .right_data
+    {
+        width: 560px;
+        height: calc(100vh - 224px);
+    }
+
+
+    .weight .right_data .head .title
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .weight .right_data .get_all_btn
+    {
+        font-size: 11px;
+
+        padding: 2px 11px;
+    }
+
+
+    .weight .right_data .item
+    {
+        font-size: 10px;
+
+        padding: 10px 4px 4px;
+    }
+
+
+    .weight .right_data .item .icons
+    {
+        gap: 2px;
+    }
+
+
+    .weight .right_data .item .icons > *.text
+    {
+        height: 18px;
+        padding: 2px 4px;
+    }
+
+
+    .weight .right_data .item .thumb
+    {
+        height: 56px;
+    }
+
+
+
+    .weight .interaction_data
+    {
+        top: 84px;
+        left: 20px;
+
+        width: 510px;
+    }
+
+
+
+    .weight .total_data
+    {
+        bottom: 140px;
+        left: 15.5%;
+    }
+
+
+
+    /*------------------
+        Bottom panel
+    ------------------*/
+    .bottom_panel .data
+    {
+        min-height: 100px;
+        padding: 10px 12px;
+    }
+
+
+    .bottom_panel .filter .title
+    {
+        margin-bottom: 10px;
+    }
+
+
+    .bottom_panel .filter .field + .field
+    {
+        margin-top: 10px;
+    }
+
+
+    .bottom_panel .item
+    {
+        font-size: 10px;
+
+        padding: 10px 4px 4px;
+    }
+
+
+    .bottom_panel .item .icons.column
+    {
+        gap: 2px;
+    }
+
+
+    .bottom_panel .item .icons > *.text
+    {
+        height: 18px;
+        padding: 2px 4px;
+    }
+
+
+    .bottom_panel .item .thumb
+    {
+        height: 54px;
+    }
 }

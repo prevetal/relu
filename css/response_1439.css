@@ -24,12 +24,145 @@
 
 
 
-    /*---------------
-        Warehouse
-    ---------------*/
-    .warehouse .modal
+    /*------------
+        Weight
+    ------------*/
+    .weight .right_data
     {
-        right: 37.792%;
+        width: 380px;
+        padding: 10px 5px 10px 10px;
+    }
+
+
+    .weight .right_data .scroll
+    {
+        padding-right: 5px;
+
+        gap: 13px;
+    }
+
+
+    .weight .right_data .section
+    {
+        padding: 10px;
+    }
+
+
+    .weight .right_data .head
+    {
+        margin-bottom: 10px;
+    }
+
+
+    .weight .right_data .on_table .head
+    {
+        margin-bottom: 11px;
+    }
+
+
+    .weight .right_data .row
+    {
+        margin-bottom: -10px;
+        margin-left: -10px;
+    }
+
+
+    .weight .right_data .row > *
+    {
+        width: calc(20% - 10px);
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+
+    .weight .right_data .item
+    {
+        padding: 4px 4px 2px;
+    }
+
+
+    .weight .right_data .item .thumb
+    {
+        height: 44px;
+    }
+
+
+
+    .weight .interaction_data
+    {
+        width: 480px;
+    }
+
+
+    .weight .interaction_data .data
+    {
+        padding: 10px;
+    }
+
+
+    .weight .interaction_data .head
+    {
+        margin-bottom: 8px;
+    }
+
+
+    .weight .interaction_data .objects:before
+    {
+        width: 153px;
+        height: 27px;
+        margin-left: -76px;
+
+        background: url(../images/objects_move_arrow2.svg) 0 0 / 100% 100% no-repeat;
+    }
+
+
+    .weight .interaction_data .objects .move_btn
+    {
+        width: 28px;
+        height: 20px;
+        margin-bottom: 4px;
+        margin-left: -14px;
+    }
+
+
+    .weight .interaction_data .object
+    {
+        width: calc(50% - 5px);
+    }
+
+
+    .weight .interaction_data .bottom
+    {
+        margin-top: 10px;
+    }
+
+
+    .weight .interaction_data .range
+    {
+        width: calc(100% - 70px);
+    }
+
+
+    .weight .interaction_data .exp
+    {
+        padding: 10px;
+    }
+
+
+
+    .weight .total_data
+    {
+        left: 14%;
+
+        width: 191px;
+    }
+
+
+    .weight .total_data .val
+    {
+        font-size: 30px;
+
+        margin-top: 2px;
     }
 
 

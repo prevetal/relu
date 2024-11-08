@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Adapting the page for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Prohibition of phone number recognition -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Page title -->
+		<title>Заголовок страницы</title>
+
+		<!-- Meta description -->
+		<meta name="description" content="">
+
+		<!-- Meta Keywords -->
+		<meta name="keywords" content="">
+
+		<!-- Changing the color of the mobile browser panel -->
+		<meta name="msapplication-TileColor" content="#2850A8">
+		<meta name="theme-color" content="#2850A8">
+
+		<!-- Connecting fonts from Google -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+		<!-- Connecting style files -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1899.css" media="print, (max-width: 1899px)" async>
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="current_task">
+							<div class="current">
+								<div>Текущая задача: <b>1. Заполните расчетный лист в соответсвии с фармокопейной статьей</b></div>
+
+								<button class="start_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+									<span>начать</span>
+								</button>
+
+								<button class="spoler_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+								</button>
+							</div>
+
+							<div class="dropdown">
+								<div class="head">
+									<div class="title">Билет № 1</div>
+
+									<div class="count">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_tasks"></use></svg>
+										<span>6 задач</span>
+									</div>
+								</div>
+
+								<div class="items">
+									<div class="active">
+										<div class="number"></div>
+										<div>Начало</div>
+									</div>
+
+									<div class="active">
+										<div class="number"></div>
+										<div>Введение</div>
+									</div>
+
+									<div>
+										<div class="number"></div>
+										<div>Смешивание базовых инглидиентов</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="menu_wrap">
+							<button class="menu_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+								<span>меню</span>
+							</button>
+
+							<div class="menu">
+								<div class="menu_item">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu1"></use></svg>
+										<span><b>ФС</b></span>
+									</a>
+								</div>
+
+								<div class="divider"></div>
+
+								<div class="menu_item">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu2"></use></svg>
+										<span>Задание</span>
+									</a>
+								</div>
+
+								<div class="menu_item">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu3"></use></svg>
+										<span>Блокнот</span>
+									</a>
+								</div>
+
+								<div class="menu_item">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu4"></use></svg>
+										<span>Расчетный лист</span>
+									</a>
+								</div>
+
+								<div class="menu_item">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu5"></use></svg>
+										<span>Таблица менделеева</span>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<button class="select_room">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu6"></use></svg>
+							<span>Выбрать комнату</span>
+						</button>
+					</div>
+				</header>
+
+
+				<section class="weight">
+					<div class="back_btn">
+						<a href="/">
+							<div class="icon">
+								<svg><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+							</div>
+
+							<span>Назад</span>
+						</a>
+					</div>
+
+					<div class="right_data">
+						<div class="scroll">
+							<div class="section equipment">
+								<div class="head">
+									<div class="title">Оборудование весовой</div>
+								</div>
+
+								<div class="row">
+									<div class="item" data-modal="weight_object1_modal">
+										<div class="thumb">
+											<img src="images/tmp/weight_equipment_item_thumb1.png" alt="" loading="lazy">
+										</div>
+
+										<div class="name">Весы</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="section on_table">
+								<div class="head">
+									<div class="title">На столе</div>
+
+									<button class="get_all_btn">Взять все</button>
+								</div>
+
+								<div class="row">
+									<div class="item" data-modal="weight_object1_modal">
+										<div class="thumb">
+											<img src="images/tmp/weight_equipment_item_thumb2.png" alt="" loading="lazy">
+										</div>
+
+										<div class="name">Емкость воды очищ</div>
+									</div>
+
+									<div class="item" data-modal="weight_object1_modal">
+										<div class="thumb">
+											<img src="images/tmp/weight_equipment_item_thumb2.png" alt="" loading="lazy">
+										</div>
+
+										<div class="name">Емкость воды очищ</div>
+									</div>
+
+									<div class="item" data-modal="weight_object1_modal">
+										<div class="thumb">
+											<img src="images/tmp/weight_equipment_item_thumb3.png" alt="" loading="lazy">
+										</div>
+
+										<div class="name">Открытый бюкс</div>
+									</div>
+
+									<div class="item" data-modal="weight_object1_modal">
+										<button class="remove_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+										</button>
+
+										<div class="icons column">
+											<div class="text">0,8555</div>
+
+											<div>
+												<img src="images/ic_drop.png" alt="" class="icon" loading="lazy">
+											</div>
+										</div>
+
+										<div class="thumb">
+											<img src="images/tmp/weight_equipment_item_thumb3.png" alt="" loading="lazy">
+										</div>
+
+										<div class="name">Открытый бюкс</div>
+									</div>
+
+									<div class="item" data-modal="weight_object1_modal">
+										<div class="icons column">
+											<div>
+												<img src="images/ic_mountains.png" alt="" class="icon" loading="lazy">
+											</div>
+										</div>
+
+										<div class="thumb">
+											<img src="images/tmp/weight_equipment_item_thumb3.png" alt="" loading="lazy">
+										</div>
+
+										<div class="name">Открытый бюкс</div>
+									</div>
+
+									<div class="item" data-modal="weight_object1_modal">
+										<div class="icons column">
+											<div>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_scales"></use></svg>
+											</div>
+										</div>
+
+										<div class="thumb">
+											<img src="images/tmp/weight_equipment_item_thumb3.png" alt="" loading="lazy">
+										</div>
+
+										<div class="name">Открытый бюкс</div>
+									</div>
+
+									<div class="item" data-modal="weight_object1_modal">
+										<div class="thumb">
+											<img src="images/tmp/weight_equipment_item_thumb2.png" alt="" loading="lazy">
+										</div>
+
+										<div class="name">Емкость воды очищ</div>
+									</div>
+
+									<div class="item" data-modal="weight_object1_modal">
+										<div class="icons column">
+											<div>
+												<img src="images/ic_mountains.png" alt="" class="icon" loading="lazy">
+											</div>
+										</div>
+
+										<div class="thumb">
+											<img src="images/tmp/weight_equipment_item_thumb3.png" alt="" loading="lazy">
+										</div>
+
+										<div class="name">Открытый бюкс</div>
+									</div>
+
+									<div class="item" data-modal="weight_object1_modal">
+										<div class="thumb">
+											<img src="images/tmp/weight_equipment_item_thumb2.png" alt="" loading="lazy">
+										</div>
+
+										<div class="name">Емкость воды очищ</div>
+									</div>
+
+									<div class="item" data-modal="weight_object1_modal">
+										<div class="icons column">
+											<div>
+												<img src="images/ic_drop.png" alt="" class="icon" loading="lazy">
+											</div>
+										</div>
+
+										<div class="thumb">
+											<img src="images/tmp/weight_equipment_item_thumb3.png" alt="" loading="lazy">
+										</div>
+
+										<div class="name">Открытый бюкс</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="modal object_modal" id="weight_object1_modal">
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="name">Бюкс</div>
+
+							<div class="overflow">
+								<div class="thumb">
+									<img src="images/tmp/point_modal_thumb.png" alt="" loading="lazy">
+								</div>
+
+								<div class="type">Тип: <span>Посуда: 30 мл.</span></div>
+							</div>
+
+							<div class="status">
+								<div class="label">Статус:</div>
+
+								<div class="val">Вода: 25 мл</div>
+							</div>
+
+							<div class="btns">
+								<button class="btn interaction_btn">Взаимодействовать</button>
+
+								<button class="btn border">Убрать в мойку</button>
+
+								<button class="btn border">Переместить в инвентарь</button>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="interaction_data">
+						<button class="close_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+						</button>
+
+						<div class="data">
+							<div class="head">
+								<div class="title">Взаимодействие</div>
+							</div>
+
+							<div class="objects">
+								<button class="move_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_move"></use></svg>
+								</button>
+
+								<div class="object">
+									<div class="name">Вода очищенная</div>
+
+									<div class="overflow">
+										<div class="thumb">
+											<img src="images/tmp/object_thumb.png" alt="" loading="lazy">
+										</div>
+
+										<div class="type">Тип: <span>Посуда: 250 мл</span></div>
+									</div>
+
+									<div class="status">
+										<div class="label">Статус:</div>
+
+										<div class="val">Вода: 50 мл /</div>
+									</div>
+								</div>
+
+								<div class="object empty">
+									<button class="add_btn">
+										<span class="icon">+</span>
+										<span>Кликните здесь, чтобы добавить объект для взаимодействия</span>
+									</button>
+								</div>
+							</div>
+
+							<div class="bottom">
+								<button class="add_btn">+</button>
+
+								<div class="range range1">
+									<input type="hidden" id="range1" name="range1" value="">
+
+									<div class="field">
+										<input type="text" inputmode="numeric" name="" value="0.000" class="input from">
+
+										<div class="unit">
+											<span>(г)</span>
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
+									</div>
+
+									<div class="btns">
+										<button class="btn border">Отнять</button>
+
+										<button class="btn">Добавить</button>
+									</div>
+								</div>
+
+								<!-- <div class="range range2">
+									<input type="hidden" id="range2" name="range2" value="">
+
+									<div class="field">
+										<input type="text" inputmode="numeric" name="" value="0.01" class="input from">
+
+										<div class="unit">
+											<span>(г)</span>
+										</div>
+									</div>
+
+									<div class="btns">
+										<button class="btn border">Отнять</button>
+
+										<button class="btn">Добавить</button>
+									</div>
+								</div> -->
+
+
+								<!-- <div class="range range3">
+									<input type="hidden" id="range3" name="range3" value="">
+
+									<div class="field">
+										<input type="text" inputmode="numeric" name="" value="0" class="input from">
+
+										<div class="unit">
+											<span>(%)</span>
+										</div>
+									</div>
+
+									<div class="btns">
+										<button class="btn border">Отнять</button>
+
+										<button class="btn">Добавить</button>
+									</div>
+								</div> -->
+
+
+								<!-- <div class="range range4">
+									<input type="hidden" id="range4" name="range4" value="">
+
+									<div class="field">
+										<input type="text" inputmode="numeric" name="" value="0.0000" class="input from">
+
+										<div class="unit">
+											<span>(мл)</span>
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</div>
+									</div>
+
+									<div class="btns">
+										<button class="btn border">Отнять</button>
+
+										<button class="btn">Добавить</button>
+									</div>
+								</div> -->
+
+
+								<!-- <div class="range range5">
+									<input type="hidden" id="range5" name="range5" value="">
+
+									<div class="field">
+										<input type="text" inputmode="numeric" name="" value="0.0000" class="input from">
+
+										<div class="unit">
+											<span>(мл)</span>
+										</div>
+									</div>
+
+									<div class="btns">
+										<button class="btn border">Отнять</button>
+
+										<button class="btn">Добавить</button>
+									</div>
+								</div> -->
+
+								<!-- <div class="range range6 custom_values">
+									<input type="hidden" id="range6" name="range6" value="">
+
+									<div class="btns">
+										<button class="btn border">Отнять</button>
+
+										<button class="btn">Добавить</button>
+									</div>
+								</div> -->
+							</div>
+						</div>
+
+						<div class="exp">
+							<div class="icon">
+								<svg><use xlink:href="images/sprite.svg#ic_exp"></use></svg>
+							</div>
+
+							<span>выберите необходимы инструмент из оборудования весовой / переместите в пустой слот / внесите правильный вес / нажмите кнопку применить</span>
+						</div>
+					</div>
+
+
+					<div class="total_data">
+						<div class="status">Статус = <span>Дефолт</span></div>
+
+						<div class="val">
+							<span>000.0000</span> <small>г</small>
+						</div>
+
+						<div class="btns">
+							<button class="btn border">Тарировать</button>
+
+							<button class="btn">Взвесить</button>
+						</div>
+					</div>
+
+
+					<img src="images/tmp/weight_img.jpg" alt="" loading="lazy" class="bg">
+
+					<div class="bottom_panel">
+						<div class="cont">
+							<div class="data">
+								<div class="filter">
+									<div class="title">Фильтры</div>
+
+									<div class="field">
+										<label class="checkbox">
+											<input type="checkbox" name="group1" checked>
+
+											<div class="check"></div>
+
+											<div>тарированные</div>
+										</label>
+									</div>
+
+									<div class="field">
+										<label class="checkbox">
+											<input type="checkbox" name="group1" checked>
+
+											<div class="check"></div>
+
+											<div>взвешенные</div>
+										</label>
+									</div>
+								</div>
+
+								<div class="swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb1.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Мерный цилиндр</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb2.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Закрытый бюкс</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb3.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Мерная колба</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb4.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Емкость воды очищ</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="icons">
+													<div>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_scales"></use></svg>
+													</div>
+												</div>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb5.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Крышка бюкса</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="icons column">
+													<div class="text">0,8555</div>
+
+													<div>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_scales"></use></svg>
+													</div>
+
+													<div>
+														<img src="images/ic_drop.png" alt="" class="icon" loading="lazy">
+													</div>
+												</div>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb6.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Открытый бюкс</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb6.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Открытый бюкс</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb6.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Открытый бюкс</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb6.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Открытый бюкс</div>
+											</div>
+										</div>
+									</div>
+
+									<button class="swiper-button-prev">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</button>
+
+									<button class="swiper-button-next">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</button>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="modal object_modal" id="object1_modal">
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="name">Бюкс</div>
+
+							<div class="overflow">
+								<div class="thumb">
+									<img src="images/tmp/point_modal_thumb.png" alt="" loading="lazy">
+								</div>
+
+								<div class="type">Тип: <span>Посуда: 30 мл.</span></div>
+							</div>
+
+							<div class="status">
+								<div class="label">Статус:</div>
+
+								<div class="val">Пустой</div>
+							</div>
+
+							<div class="btns">
+								<button class="btn">Переместить на стол</button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+		<!-- Connecting javascript files -->
+		<script src="js/jquery-3.6.3.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
