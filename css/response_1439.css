@@ -174,4 +174,68 @@
     {
         padding-bottom: 100px;
     }
+
+
+
+    /*-----------------------
+        Select room modal
+    -----------------------*/
+    .select_room_modal .close_btn
+    {
+        top: 24px;
+        right: 24px;
+
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .select_room_modal .close_btn .icon
+    {
+        width: 14px;
+        height: 14px;
+    }
+
+
+    .select_room_modal .scroll
+    {
+        padding: 36px 24px;
+    }
+
+
+    .select_room_modal .title
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .select_room_modal .items
+    {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+
+    .select_room_modal .items > * + *
+    {
+        margin-top: 12px;
+    }
+
+
+    .select_room_modal .items a
+    {
+        padding-bottom: 10px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal_title
+    {
+        font-size: 23px;
+        line-height: 32px;
+    }
 }

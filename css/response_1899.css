@@ -57,7 +57,8 @@
     }
 
 
-    header .menu .menu_item a
+    header .menu .menu_item a,
+    header .menu .menu_item .btn
     {
         font-family: var(--font_family);
         line-height: 24px;
@@ -78,7 +79,8 @@
     }
 
 
-    header .menu .menu_item a .icon
+    header .menu .menu_item a .icon,
+    header .menu .menu_item .btn .icon
     {
         color: #2a62a9;
     }
@@ -86,6 +88,8 @@
 
     header .menu .menu_item a:hover,
     header .menu .menu_item a.active
+    header .menu .menu_item .btn:hover,
+    header .menu .menu_item .btn.active
     {
         background: rgba(47, 94, 160, .11);
     }
@@ -209,5 +213,40 @@
     .bottom_panel .item .thumb
     {
         height: 54px;
+    }
+
+
+
+    /*-----------------------
+        Select room modal
+    -----------------------*/
+    .select_room_modal .close_btn
+    {
+        top: 44px;
+        right: 50px;
+    }
+
+
+    .select_room_modal .scroll
+    {
+        padding: 60px 50px;
+    }
+
+
+    .select_room_modal .title
+    {
+        margin-bottom: 44px;
+    }
+
+
+    .select_room_modal .items > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    .select_room_modal .items a
+    {
+        padding-bottom: 22px;
     }
 }

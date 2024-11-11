@@ -288,6 +288,50 @@ document.addEventListener('DOMContentLoaded', function () {
 		values: ['1/1000 Б', '1/100 Б', '1/50', '1/20', '1/10', '1/5', '1/2', '1'],
 		grid: true
 	}).data('ionRangeSlider')
+
+
+	// Select room
+	$('.select_room_btn, .select_room_modal .close_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.select_room_modal').toggleClass('show')
+	})
+
+
+	// Fancybox
+	Fancybox.defaults.autoFocus = false
+	Fancybox.defaults.trapFocus = false
+	Fancybox.defaults.dragToClose = false
+	Fancybox.defaults.placeFocusBack = false
+	Fancybox.defaults.l10n = {
+		CLOSE: 'Закрыть',
+		NEXT: 'Следующий',
+		PREV: 'Предыдущий',
+		MODAL: 'Вы можете закрыть это модальное окно нажав клавишу ESC'
+	}
+
+	Fancybox.defaults.tpl = {
+		closeButton: '<button data-fancybox-close class="f-button is-close-btn" title="{{CLOSE}}"><svg><use xlink:href="images/sprite.svg#ic_close"></use></svg></button>',
+
+		main: `<div class="fancybox__container" role="dialog" aria-modal="true" aria-label="{{MODAL}}" tabindex="-1">
+			<div class="fancybox__backdrop"></div>
+			<div class="fancybox__carousel"></div>
+			<div class="fancybox__footer"></div>
+		</div>`,
+	}
+
+
+	// Modals
+	$('.modal_btn').click(function(e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: document.getElementById(e.target.getAttribute('data-modal')),
+			type: 'inline'
+		}])
+	})
 })
 
 
@@ -303,7 +347,9 @@ window.addEventListener('resize', function () {
 
 
 		// Home page
-		$('.home_page .rooms a span').forEach(el => el.height('auto'))
+		$('.home_page .rooms a span').each(function () {
+			$(this).height('auto')
+		})
 
 		setHeight(document.querySelectorAll('.home_page .rooms a span'))
 
