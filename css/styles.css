@@ -221,7 +221,8 @@ button
 }
 
 
-.modal_btn > *
+.modal_btn > *,
+a[data-type='ajax'] > *
 {
     pointer-events: none;
 }
@@ -3116,6 +3117,111 @@ header .select_room_btn .icon
 
 
 
+/*---------------
+    Task info
+---------------*/
+.task_info .data
+{
+    position: relative;
+
+    margin-top: 16px;
+    padding-top: 16px;
+
+    border-top: 1px solid #e4e2e4;
+}
+
+
+.task_info .status
+{
+    font-size: 13px;
+    line-height: 18px;
+
+    position: absolute;
+    z-index: 3;
+    top: 16px;
+    right: 0;
+
+    padding: 3px 10px;
+
+    white-space: nowrap;
+    letter-spacing: .16px;
+
+    color: #fff;
+    border-radius: 100px;
+}
+
+
+.task_info .status.in_process
+{
+    background: #2196f3;
+}
+
+.task_info .status.error
+{
+    background: #d32f2f;
+}
+
+.task_info .status.success
+{
+    background: #2e7d32;
+}
+
+.task_info .status.new
+{
+    background: #ef6c00;
+}
+
+
+.task_info .text
+{
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #424750;
+}
+
+
+.task_info .text > *
+{
+    margin-bottom: 20px;
+}
+
+
+.task_info .text > :last-child
+{
+    margin-bottom: 0 !important;
+}
+
+.task_info .text > :first-child
+{
+    margin-top: 0 !important;
+}
+
+
+.task_info .text h2
+{
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 32px;
+
+    margin-bottom: 24px !important;
+
+    color: #2850a8;
+}
+
+
+.text_block * + h2
+{
+    margin-top: 40px;
+}
+
+.text_block h2 + *
+{
+    margin-top: 0 !important;
+}
+
+
+
 /*-----------
     PopUp
 -----------*/
@@ -3549,4 +3655,399 @@ header .select_room_btn .icon
 
     border-radius: 50%;
     background: currentColor;
+}
+
+
+
+/*----------------------------
+    PopUp - Periodic table
+----------------------------*/
+#periodic_table_modal
+{
+    width: 1336px;
+    padding: 52px 80px 80px;
+}
+
+
+#periodic_table_modal .modal_title
+{
+    text-align: center;
+}
+
+
+#periodic_table_modal img
+{
+    display: block;
+
+    max-width: 100%;
+    margin: -44px auto 0;
+}
+
+
+
+/*-------------------
+    PopUp - Tasks
+-------------------*/
+#tasks_modal
+{
+    width: 880px;
+}
+
+
+#tasks_modal .modal_title
+{
+    background: linear-gradient(180deg, rgba(0, 72, 153, .90) 0%, rgba(0, 24, 51, .90) 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+#tasks_modal .head
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 16px;
+}
+
+
+#tasks_modal .head .exp
+{
+    line-height: 20px;
+
+    margin-right: auto;
+
+    color: #424750;
+}
+
+
+#tasks_modal .head .ticket,
+#tasks_modal .head .count
+{
+    line-height: 20px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-left: 25px;
+
+    color: #424750;
+
+    gap: 9px;
+}
+
+
+#tasks_modal .head .ticket img,
+#tasks_modal .head .count img
+{
+    display: block;
+
+    width: 16px;
+    height: 16px;
+}
+
+
+#tasks_modal .head .progress
+{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+
+    margin-left: 12px;
+
+    color: #424750;
+}
+
+
+#tasks_modal .filter
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 16px;
+
+    gap: 12px;
+}
+
+
+#tasks_modal .filter .btn
+{
+    line-height: 20px;
+
+    padding: 4px 14px;
+
+    transition: .2s linear;
+    letter-spacing: .3px;
+
+    color: #2a62a9;
+    border: 2px solid #2850a8;
+    border-radius: 20px;
+}
+
+
+#tasks_modal .filter .btn:hover,
+#tasks_modal .filter .btn.active
+{
+    color: #fff;
+    background: #2850a8;
+}
+
+
+#tasks_modal .list
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 24px;
+
+    gap: 24px;
+}
+
+
+#tasks_modal .task
+{
+    position: relative;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 21px 116px 58px 15px;
+
+    border-radius: 16px;
+    background: #fff;
+}
+
+
+#tasks_modal .task .status
+{
+    font-size: 13px;
+    line-height: 18px;
+
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+
+    padding: 3px 10px;
+
+    white-space: nowrap;
+    letter-spacing: .16px;
+
+    color: #fff;
+    border-radius: 100px;
+}
+
+
+#tasks_modal .task.in_process .status
+{
+    background: #2196f3;
+}
+
+#tasks_modal .task.error .status
+{
+    background: #d32f2f;
+}
+
+#tasks_modal .task.success .status
+{
+    background: #2e7d32;
+}
+
+#tasks_modal .task.new .status
+{
+    background: #ef6c00;
+}
+
+
+#tasks_modal .task .info
+{
+    font-family: var(--font_family2);
+    font-size: 10px;
+    line-height: 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 64px;
+    max-width: 100%;
+
+    text-align: center;
+    letter-spacing: -.5px;
+
+    color: #424750;
+
+    gap: 8px;
+}
+
+
+#tasks_modal .task .number
+{
+    font-family: var(--font_family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+
+#tasks_modal .task .info + *
+{
+    width: calc(100% - 78px);
+    padding-top: 9px;
+}
+
+
+#tasks_modal .task .name
+{
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28px;
+
+    color: #424750;
+}
+
+
+#tasks_modal .task .desc
+{
+    line-height: 20px;
+
+    margin-top: 8px;
+
+    color: #424750;
+}
+
+
+#tasks_modal .task .link
+{
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+}
+
+
+#tasks_modal .task .link a
+{
+    font-weight: 700;
+    line-height: 20px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    padding: 4px 16px;
+
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 16px 0;
+    background: rgba(0, 72, 153, .90);
+
+    gap: 8px;
+}
+
+
+#tasks_modal .task .link .icon
+{
+    display: block;
+
+    width: 17px;
+    height: 8px;
+}
+
+
+
+/*-----------------------
+    PopUp - Task info
+-----------------------*/
+.modal.task_info
+{
+    display: inline-block;
+
+    width: 880px;
+}
+
+
+.modal.task_info .bottom
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    width: calc(100% + 110px);
+    margin: 40px -55px -40px;
+    padding: 32px 55px;
+
+    color: #fff;
+    border-radius: 0 0 32px 32px;
+    background: #38383a;
+
+    gap: 12px;
+}
+
+
+.modal.task_info .bottom .btn
+{
+    font-weight: 700;
+    line-height: 20px;
+
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    letter-spacing: .3px;
+
+    color: currentColor;
+    border: 2px solid #cbc9cb;
+    border-radius: 18px;
+    box-shadow: 6px 6px 14px 0 rgba(1, 33, 69, .15);
+}
+
+
+.modal.task_info .bottom .done
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 12px 20px;
+
+    border-radius: 18px;
+    background: #2e7d32;
+    box-shadow: 6px 6px 14px 0 rgba(1, 33, 69, .15);
+
+    gap: 12px;
+}
+
+
+.modal.task_info .bottom .done .icon
+{
+    display: block;
+
+    width: 16px;
+    height: 11px;
 }

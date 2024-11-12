@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Modals
-	$('.modal_btn').click(function(e) {
+	$('body').on('click', '.modal_btn', function (e) {
 		e.preventDefault()
 
 		Fancybox.close()
@@ -331,6 +331,32 @@ document.addEventListener('DOMContentLoaded', function () {
 			src: document.getElementById(e.target.getAttribute('data-modal')),
 			type: 'inline'
 		}])
+	})
+
+
+	$('body').on('click', 'a[data-type="ajax"]', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: e.target.getAttribute('href'),
+			type: 'ajax'
+		}])
+	})
+
+
+	// Tasks filter
+	$('#tasks_modal .filter .btn').click(function(e) {
+		e.preventDefault()
+
+		let filter = $(this).data('filter')
+
+		$('#tasks_modal .filter .btn').removeClass('active')
+		$(this).addClass('active')
+
+		$('#tasks_modal .task').hide()
+		$('#tasks_modal .task.' + filter).fadeIn(100)
 	})
 })
 
