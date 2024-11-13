@@ -3243,6 +3243,16 @@ header .select_room_btn .icon
 }
 
 
+.modal.object_modal
+{
+    width: 230px;
+    padding: 8px 12px 12px;
+
+    border-radius: 10px;
+    background: #fff;
+}
+
+
 .modal_title
 {
     font-size: 32px;
