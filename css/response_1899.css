@@ -167,6 +167,84 @@
 
 
 
+    /*-------------
+        Exhaust
+    -------------*/
+    .exhaust .right_data
+    {
+        bottom: 137px;
+
+        width: 560px;
+        max-height: calc(100vh - 221px);
+    }
+
+
+    .exhaust .right_data .scroll
+    {
+        max-height: 256px;
+    }
+
+
+    .exhaust .right_data .head .title
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .exhaust .right_data .get_all_btn
+    {
+        font-size: 11px;
+
+        padding: 2px 11px;
+    }
+
+
+    .exhaust .right_data .row > *
+    {
+        width: calc(20% - 20px);
+    }
+
+
+    .exhaust .right_data .item
+    {
+        font-size: 10px;
+
+        padding: 10px 4px 4px;
+    }
+
+
+    .exhaust .right_data .item .icons
+    {
+        gap: 2px;
+    }
+
+
+    .exhaust .right_data .item .icons > *.text
+    {
+        height: 18px;
+        padding: 2px 4px;
+    }
+
+
+    .exhaust .right_data .item .thumb
+    {
+        height: 56px;
+    }
+
+
+
+    /*-------------------
+        Chromatograph
+    -------------------*/
+    .chromatograph .main_data
+    {
+        top: 155px;
+        left: 24px;
+    }
+
+
+
     /*------------------
         Bottom panel
     ------------------*/

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Adapting the page for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Prohibition of phone number recognition -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Page title -->
+		<title>Заголовок страницы</title>
+
+		<!-- Meta description -->
+		<meta name="description" content="">
+
+		<!-- Meta Keywords -->
+		<meta name="keywords" content="">
+
+		<!-- Changing the color of the mobile browser panel -->
+		<meta name="msapplication-TileColor" content="#2850A8">
+		<meta name="theme-color" content="#2850A8">
+
+		<!-- Connecting fonts from Google -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+		<!-- Connecting style files -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1899.css" media="print, (max-width: 1899px)" async>
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="current_task">
+							<div class="current">
+								<div>Текущая задача: <b>1. Заполните расчетный лист в соответсвии с фармокопейной статьей</b></div>
+
+								<button class="start_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+									<span>начать</span>
+								</button>
+
+								<button class="spoler_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+								</button>
+							</div>
+
+							<div class="dropdown">
+								<div class="head">
+									<div class="title">Билет № 1</div>
+
+									<div class="count">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_tasks"></use></svg>
+										<span>6 задач</span>
+									</div>
+								</div>
+
+								<div class="items">
+									<div class="active">
+										<div class="number"></div>
+										<div>Начало</div>
+									</div>
+
+									<div class="active">
+										<div class="number"></div>
+										<div>Введение</div>
+									</div>
+
+									<div>
+										<div class="number"></div>
+										<div>Смешивание базовых инглидиентов</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="menu_wrap">
+							<button class="menu_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+								<span>меню</span>
+							</button>
+
+							<div class="menu">
+								<div class="menu_item">
+									<a href="/">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu1"></use></svg>
+										<span><b>ФС</b></span>
+									</a>
+								</div>
+
+								<div class="divider"></div>
+
+								<div class="menu_item">
+									<button class="btn modal_btn" data-modal="tasks_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu2"></use></svg>
+										<span>Задание</span>
+									</button>
+								</div>
+
+								<div class="menu_item">
+									<button class="btn modal_btn" data-modal="notepad_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu3"></use></svg>
+										<span>Блокнот</span>
+									</button>
+								</div>
+
+								<div class="menu_item">
+									<button class="btn modal_btn" data-modal="pay_slip_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu4"></use></svg>
+										<span>Расчетный лист</span>
+									</button>
+								</div>
+
+								<div class="menu_item">
+									<button class="btn modal_btn" data-modal="periodic_table_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu5"></use></svg>
+										<span>Таблица менделеева</span>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<button class="select_room_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu6"></use></svg>
+							<span>Выбрать комнату</span>
+						</button>
+					</div>
+				</header>
+
+
+				<section class="select_room_modal">
+					<button class="close_btn">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+
+					<div class="scroll">
+						<div class="title">Выбрать комнату</div>
+
+						<div class="items">
+							<div><a href="/">
+								<div class="number"><span></span></div>
+								<div>Лаборатория</div>
+							</a></div>
+
+							<div><a href="/">
+								<div class="number"><span></span></div>
+								<div>Хроматограф</div>
+							</a></div>
+
+							<div><a href="/">
+								<div class="number"><span></span></div>
+								<div>Приготовление растворов</div>
+							</a></div>
+
+							<div><a href="/">
+								<div class="number"><span></span></div>
+								<div>Весовая</div>
+							</a></div>
+
+							<div><a href="/">
+								<div class="number"><span></span></div>
+								<div>Склад</div>
+							</a></div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="chromatograph">
+					<div class="back_btn">
+						<a href="/">
+							<div class="icon">
+								<svg><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+							</div>
+
+							<span>Назад</span>
+						</a>
+					</div>
+
+					<div class="main_data">
+						<div class="row">
+							<div class="section big">
+								<div class="title">Хроматограф</div>
+
+								<div class="row">
+									<button class="btn no">
+										<div class="status">
+											<div class="green"></div>
+											<div class="red"></div>
+										</div>
+
+										<div class="icon small">
+											<svg><use xlink:href="images/sprite.svg#ic_chromatograph1"></use></svg>
+										</div>
+
+										<div>
+											<div class="name">Установить</div>
+
+											<div class="desc">Поставить банки на хроматограф</div>
+										</div>
+									</button>
+
+									<button class="btn no disabled">
+										<div class="status">
+											<div class="green"></div>
+											<div class="red"></div>
+										</div>
+
+										<div class="icon small">
+											<svg><use xlink:href="images/sprite.svg#ic_chromatograph1"></use></svg>
+										</div>
+
+										<div>
+											<div class="name">Включить</div>
+
+											<div class="desc">Включает весь хроматограф</div>
+										</div>
+									</button>
+
+									<button class="btn no disabled">
+										<div class="status">
+											<div class="green"></div>
+											<div class="red"></div>
+										</div>
+
+										<div class="icon">
+											<svg><use xlink:href="images/sprite.svg#ic_chromatograph2"></use></svg>
+										</div>
+
+										<div>
+											<div class="name">Открыть</div>
+
+											<div class="desc">Вентель промыки каппиляров</div>
+										</div>
+									</button>
+
+									<button class="btn no disabled">
+										<div class="status">
+											<div class="green"></div>
+											<div class="red"></div>
+										</div>
+
+										<div class="icon">
+											<svg><use xlink:href="images/sprite.svg#ic_chromatograph3"></use></svg>
+										</div>
+
+										<div>
+											<div class="name">Заменить колонки</div>
+
+											<div class="desc">Замена колонки в хроматографе</div>
+										</div>
+									</button>
+								</div>
+							</div>
+
+							<div class="section">
+								<div class="title">Насос</div>
+
+								<button class="btn no disabled">
+									<div class="status">
+										<div class="green"></div>
+										<div class="red"></div>
+									</div>
+
+									<div class="icon">
+										<svg><use xlink:href="images/sprite.svg#ic_chromatograph4"></use></svg>
+									</div>
+
+									<div>
+										<div class="name">Включить</div>
+
+										<div class="desc">Управление насосом хроматографа</div>
+									</div>
+								</button>
+							</div>
+
+							<div class="section">
+								<div class="title">Инжектор</div>
+
+								<button class="btn no disabled">
+									<div class="status">
+										<div class="green"></div>
+										<div class="red"></div>
+									</div>
+
+									<div class="icon middle">
+										<svg><use xlink:href="images/sprite.svg#ic_chromatograph5"></use></svg>
+									</div>
+
+									<div>
+										<div class="name">Подсоеденить</div>
+
+										<div class="desc">Ввод шприцов в кран хроматографа</div>
+									</div>
+								</button>
+							</div>
+
+							<div class="section">
+								<div class="title">Работа с ПО</div>
+
+								<button class="default_btn modal_btn" data-modal="chromatograph_error_modal">
+									<svg><use xlink:href="images/sprite.svg#ic_chromatograph6"></use></svg>
+
+									<span>Запустить ПО</span>
+								</button>
+							</div>
+
+							<div class="section">
+								<div class="title">Записи</div>
+
+								<button class="default_btn modal_btn" data-modal="chromatograph_error2_modal">
+									<svg><use xlink:href="images/sprite.svg#ic_chromatograph7"></use></svg>
+
+									<span>Внести записи</span>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<img src="images/tmp/chromatograph_img.jpg" alt="" loading="lazy" class="bg">
+
+					<div class="bottom_panel">
+						<div class="cont">
+							<div class="data">
+								<div class="filter">
+									<div class="title">Фильтры</div>
+
+									<div class="field">
+										<label class="checkbox">
+											<input type="checkbox" name="group1" checked>
+
+											<div class="check"></div>
+
+											<div>тарированные</div>
+										</label>
+									</div>
+
+									<div class="field">
+										<label class="checkbox">
+											<input type="checkbox" name="group1" checked>
+
+											<div class="check"></div>
+
+											<div>взвешенные</div>
+										</label>
+									</div>
+								</div>
+
+								<div class="swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb1.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Мерный цилиндр</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb2.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Закрытый бюкс</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb3.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Мерная колба</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb4.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Емкость воды очищ</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="icons">
+													<div>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_scales"></use></svg>
+													</div>
+												</div>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb5.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Крышка бюкса</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="icons column">
+													<div class="text">0,8555</div>
+
+													<div>
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_scales"></use></svg>
+													</div>
+
+													<div>
+														<img src="images/ic_drop.png" alt="" class="icon" loading="lazy">
+													</div>
+												</div>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb6.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Открытый бюкс</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb6.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Открытый бюкс</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb6.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Открытый бюкс</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="item" data-modal="object1_modal">
+												<button class="remove_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_remove"></use></svg>
+												</button>
+
+												<div class="thumb">
+													<img src="images/tmp/warehouse_item_thumb6.png" alt="" loading="lazy">
+												</div>
+
+												<div class="name">Открытый бюкс</div>
+											</div>
+										</div>
+									</div>
+
+									<button class="swiper-button-prev">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</button>
+
+									<button class="swiper-button-next">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</button>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="modal object_modal" id="object1_modal">
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="name">Бюкс</div>
+
+							<div class="overflow">
+								<div class="thumb">
+									<img src="images/tmp/point_modal_thumb.png" alt="" loading="lazy">
+								</div>
+
+								<div class="type">Тип: <span>Посуда: 30 мл.</span></div>
+							</div>
+
+							<div class="status">
+								<div class="label">Статус:</div>
+
+								<div class="val">Пустой</div>
+							</div>
+
+							<div class="btns">
+								<button class="btn">Переместить на стол</button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+
+
+
+		<section class="modal" id="tasks_modal">
+			<div class="modal_title">Задания</div>
+
+			<div class="head">
+				<div class="exp">Начните проходить обучение и отслеживайте свой прогресс</div>
+
+				<div class="ticket">
+					<img src="images/ic_task_ticket.svg" alt="" loading="lazy">
+					<span>Билет: №1</span>
+				</div>
+
+				<div class="count">
+					<img src="images/ic_task.svg" alt="" loading="lazy">
+					<span>Задач: 4</span>
+				</div>
+
+				<div class="progress">68%</div>
+			</div>
+
+			<div class="filter">
+				<button class="btn active" data-filter="all">Все</button>
+
+				<button class="btn" data-filter="in_process">В процессе</button>
+
+				<button class="btn" data-filter="finished">Завершенные</button>
+			</div>
+
+			<div class="list">
+				<div class="task all in_process">
+					<div class="status">В процессе</div>
+
+					<div class="info">
+						<div class="number">01</div>
+
+						<div class="type">Задача</div>
+
+						<div class="level">Простой</div>
+					</div>
+
+					<div>
+						<div class="name">Основы смешивания химических ингридиентов</div>
+
+						<div class="desc">Знакомство со стеклянной тарой для взвешивания. Общая идея смешивания.  Прочие идеи и лайфхаки.</div>
+					</div>
+
+					<div class="link">
+						<a href="/task_modal2.html" data-type="ajax">
+							<span>Открыть</span>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="task all finished error">
+					<div class="status">Ошибка</div>
+
+					<div class="info">
+						<div class="number">02</div>
+
+						<div class="type">Задача</div>
+
+						<div class="level">Простой</div>
+					</div>
+
+					<div>
+						<div class="name">Основы смешивания химических ингридиентов</div>
+
+						<div class="desc">Знакомство со стеклянной тарой для взвешивания. Общая идея смешивания.  Прочие идеи и лайфхаки.</div>
+					</div>
+
+					<div class="link">
+						<a href="/task_modal3.html" data-type="ajax">
+							<span>Открыть</span>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="task all finished success">
+					<div class="status">Успех</div>
+
+					<div class="info">
+						<div class="number">03</div>
+
+						<div class="type">Задача</div>
+
+						<div class="level">Простой</div>
+					</div>
+
+					<div>
+						<div class="name">Основы смешивания химических ингридиентов</div>
+
+						<div class="desc">Знакомство со стеклянной тарой для взвешивания. Общая идея смешивания.  Прочие идеи и лайфхаки.</div>
+					</div>
+
+					<div class="link">
+						<a href="/task_modal3.html" data-type="ajax">
+							<span>Открыть</span>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="task all new">
+					<div class="status">Новое</div>
+
+					<div class="info">
+						<div class="number">04</div>
+
+						<div class="type">Задача</div>
+
+						<div class="level">Простой</div>
+					</div>
+
+					<div>
+						<div class="name">Основы смешивания химических ингридиентов</div>
+
+						<div class="desc">Знакомство со стеклянной тарой для взвешивания. Общая идея смешивания.  Прочие идеи и лайфхаки.</div>
+					</div>
+
+					<div class="link">
+						<a href="/task_modal.html" data-type="ajax">
+							<span>Открыть</span>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="modal" id="notepad_modal">
+			<div class="modal_title">Блокнот</div>
+
+			<div class="modal_desc">Заметки будут здесь храниться только в текущей сесии (до перезагрузки браузера)</div>
+
+			<div class="list">
+				<div class="item">
+					<ul>
+						<li>Н2O – вода.</li>
+						<li>СО2 – углекислый газ.</li>
+						<li>C2H5OH – этиловый спирт (из которого делают водку).</li>
+						<li>NaCl – поваренная соль.</li>
+						<li>С – алмаз (и графит вместе с ним)</li>
+					</ul>
+
+					<p>AgBrбромид серебра(I)7785-23-1</p>
+
+					<p>AgIO3иодат серебра7783-97-3</p>
+				</div>
+			</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Начните вводить ваш текст">
+					</div>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="pay_slip_modal">
+			<div class="status_wrap">
+				<div class="status">
+					<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+					<span>В процессе</span>
+				</div>
+			</div>
+
+			<div class="modal_title">Расчетный лист</div>
+
+			<div class="modal_desc">Вам необходимо внести молекулярную массу компонентов: Для этого восползуйтесь таблицей «Менделеева» и калькулятором.</div>
+
+			<div class="list">
+				<div class="item">
+					<div class="thumb">
+						<img src="images/tmp/pay_slip_modal_thumb.png" alt="" loading="lazy">
+					</div>
+
+					<div>
+						<div class="indicator grey"></div>
+
+						<div class="name">Компонент - реанет химический №1, для  хим раствора сериала «Во все тяжкие»</div>
+
+						<div class="value">
+							<input type="number" inputmode="numeric" name="" value="" class="input" placeholder="0.000">
+
+							<div class="unit">
+								<span>(мл)</span>
+								<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+							</div>
+						</div>
+
+						<button class="add_btn">Внести</button>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="thumb">
+						<img src="images/tmp/pay_slip_modal_thumb.png" alt="" loading="lazy">
+					</div>
+
+					<div>
+						<div class="indicator red"></div>
+
+						<div class="name">Компонент - реанет химический №1, для  хим раствора сериала «Во все тяжкие»</div>
+
+						<div class="value">
+							<input type="number" inputmode="numeric" name="" value="" class="input" placeholder="0.000">
+
+							<div class="unit">
+								<span>(мл)</span>
+								<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+							</div>
+						</div>
+
+						<button class="add_btn">Внести</button>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="thumb">
+						<img src="images/tmp/pay_slip_modal_thumb.png" alt="" loading="lazy">
+					</div>
+
+					<div>
+						<div class="indicator green"></div>
+
+						<div class="name">Компонент - реанет химический №1, для  хим раствора сериала «Во все тяжкие»</div>
+
+						<div class="value">
+							<input type="number" inputmode="numeric" name="" value="" class="input" placeholder="0.000">
+
+							<div class="unit">
+								<span>(мл)</span>
+								<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+							</div>
+						</div>
+
+						<button class="add_btn">Внести</button>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="thumb">
+						<img src="images/tmp/pay_slip_modal_thumb.png" alt="" loading="lazy">
+					</div>
+
+					<div>
+						<div class="indicator green"></div>
+
+						<div class="name">Компонент - реанет химический №1, для  хим раствора сериала «Во все тяжкие»</div>
+
+						<div class="value">
+							<input type="number" inputmode="numeric" name="" value="" class="input" placeholder="0.000">
+
+							<div class="unit">
+								<span>(мл)</span>
+								<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+							</div>
+						</div>
+
+						<button class="add_btn">Внести</button>
+					</div>
+				</div>
+			</div>
+
+			<button class="check_btn">Проверить</button>
+		</section>
+
+
+		<section class="modal" id="periodic_table_modal">
+			<div class="modal_title">Таблица<br> Менделеева</div>
+
+			<img src="images/tmp/periodic_table_img.png" alt="" loading="lazy">
+		</section>
+
+
+		<section class="modal error_modal" id="chromatograph_error_modal">
+			<div class="modal_title">Ошибка!</div>
+
+			<div class="modal_desc">
+				<p>Данное действие не возможно выполнить, пожалуйста поменяйте параметры и попробуйте еще раз!</p>
+			</div>
+
+			<button class="close_btn">Закрыть</button>
+		</section>
+
+
+		<section class="modal error_modal" id="chromatograph_error2_modal">
+			<div class="modal_title">Вы совершили критическую ошибку!</div>
+
+			<div class="modal_desc">
+				<p>Вам не удалось выполнить и  пройти необходимые этапы билета.</p>
+
+				<p>За подробной информацией обращайтесь к преподавателю!</p>
+			</div>
+
+			<button class="close_btn">Закрыть</button>
+		</section>
+
+
+		<!-- Connecting javascript files -->
+		<script src="js/jquery-3.6.3.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

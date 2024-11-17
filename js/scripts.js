@@ -134,8 +134,34 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
+	// Exhaust - Right data - Remove item
+	$('.exhaust .right_data .item .remove_btn').click(function(e) {
+		e.preventDefault()
+		e.stopPropagation()
+
+	})
+
+
+	// Exhaust - Buttons
+	$('.exhaust .image .btn').click(function(e) {
+		e.preventDefault()
+
+		let modal = $(this).data('modal')
+
+		$('.exhaust .image .exhaust_modal').hide()
+		$('#' + modal).fadeIn(300)
+	})
+
+
+	$('.exhaust .exhaust_modal .close_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.exhaust .image .exhaust_modal').fadeOut(200)
+	})
+
+
 	// Objec modal
-	$('.bottom_panel .item, .weight .right_data .item, .warehouse .image .point').click(function(e) {
+	$('.bottom_panel .item, .weight .right_data .item, .warehouse .image .point, .exhaust .right_data .item').click(function(e) {
 		e.preventDefault()
 
 		let modal = $(this).data('modal')
@@ -290,6 +316,36 @@ document.addEventListener('DOMContentLoaded', function () {
 	}).data('ionRangeSlider')
 
 
+	bath_temperature = $('#bath_temperature').ionRangeSlider({
+		min: 0,
+		max: 100,
+		from: 14,
+		step: 1,
+		grid: true,
+		grid_num: 10
+	}).data('ionRangeSlider')
+
+
+	bath_time = $('#bath_time').ionRangeSlider({
+		min: 10,
+		max: 120,
+		from: 24,
+		step: 1,
+		grid: true,
+		grid_num: 11
+	}).data('ionRangeSlider')
+
+
+	mixer_time = $('#mixer_time').ionRangeSlider({
+		min: 10,
+		max: 120,
+		from: 24,
+		step: 1,
+		grid: true,
+		grid_num: 11
+	}).data('ionRangeSlider')
+
+
 	// Select room
 	$('.select_room_btn, .select_room_modal .close_btn').click(function(e) {
 		e.preventDefault()
@@ -334,6 +390,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
+	$('body').on('click', '.modal .close_btn', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+	})
+
+
 	$('body').on('click', 'a[data-type="ajax"]', function (e) {
 		e.preventDefault()
 
@@ -357,6 +420,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		$('#tasks_modal .task').hide()
 		$('#tasks_modal .task.' + filter).fadeIn(100)
+	})
+
+
+	// Chromatograph
+	$('.chromatograph .main_data .btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).hasClass('yes')
+			? $(this).removeClass('yes').addClass('no')
+			: $(this).removeClass('no').addClass('yes')
 	})
 })
 
