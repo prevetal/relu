@@ -4892,6 +4892,11 @@ header .select_room_btn .icon
     background: #2e3035;
 }
 
+.software .top_panel.no_m
+{
+    margin-bottom: 0;
+}
+
 
 .software .top_panel .section
 {
@@ -4901,7 +4906,7 @@ header .select_room_btn .icon
 }
 
 
-.software .top_panel img
+.software .top_panel .section img
 {
     display: block;
 
@@ -4987,6 +4992,8 @@ header .select_room_btn .icon
     font-weight: 700;
     line-height: 24px;
 
+    align-self: center;
+
     height: 84px;
     margin-left: auto;
     padding: 0 16px;
@@ -5016,6 +5023,19 @@ header .select_room_btn .icon
     padding: 0 8px 8px;
 
     gap: 8px;
+}
+
+.software .data.no_pad
+{
+    padding: 0;
+}
+
+
+.software .data > img
+{
+    display: block;
+
+    width: 100%;
 }
 
 
