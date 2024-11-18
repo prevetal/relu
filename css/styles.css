@@ -5040,6 +5040,90 @@ header .select_room_btn .icon
 
 
 
+.software .data > .col_left
+{
+    width: 366px;
+    max-width: 100%;
+    padding: 13px 15px;
+
+    border: 1px solid #c3c6d2;
+    background: #f9f9ff;
+}
+
+
+.software .data > .col_left .title
+{
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 32px;
+
+    margin-bottom: 24px;
+}
+
+
+.software .data > .col_left .links
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.software .data > .col_left .links a
+{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+.software .data > .col_left .links span
+{
+    align-self: center;
+
+    width: calc(1005 - 30px);
+}
+
+
+.software .data > .col_left .links img
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    transform: rotate(-90deg);
+}
+
+
+
+.software .data > .col_right
+{
+    width: calc(100% - 374px);
+    margin-left: auto;
+}
+
+
+.software .data > .col_right img
+{
+    display: block;
+
+    width: 100%;
+}
+
+
+
 .software .left_panel
 {
     width: 40px;
