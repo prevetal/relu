@@ -5144,6 +5144,14 @@ header .select_room_btn .icon
 }
 
 
+.software .full_panel .grid .block img
+{
+    display: block;
+
+    width: 100%;
+}
+
+
 .software .full_panel .grid .block .head
 {
     padding-right: 20px;
@@ -5187,9 +5195,17 @@ header .select_room_btn .icon
 }
 
 
-.software .full_panel .grid .info .line + .line
+.software .full_panel .grid .info img + .line,
+.software .full_panel .grid .info .line + img
 {
     margin-top: 3px;
+}
+
+
+.software .full_panel .grid .info img.last
+{
+    width: calc(100% + 8px);
+    margin-left: -8px;
 }
 
 
@@ -5200,8 +5216,8 @@ header .select_room_btn .icon
 
     align-self: center;
 
-    width: 165px;
-    padding-right: 16px;
+    width: 167px;
+    padding-right: 17px;
 
     color: #048387;
 }
@@ -5211,7 +5227,7 @@ header .select_room_btn .icon
 {
     position: relative;
 
-    width: calc(100% - 165px);
+    width: calc(100% - 167px);
 }
 
 
@@ -5385,6 +5401,16 @@ header .select_room_btn .icon
 
     margin-top: auto;
     padding-top: 32px;
+
+    gap: 19px;
+}
+
+
+.software .full_panel .grid .block .btns > img
+{
+    display: block;
+
+    width: auto;
 }
 
 
