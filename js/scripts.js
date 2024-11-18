@@ -405,7 +405,23 @@ document.addEventListener('DOMContentLoaded', function () {
 		Fancybox.show([{
 			src: e.target.getAttribute('href'),
 			type: 'ajax'
-		}])
+		}], {
+			on: {
+				reveal: () => {
+					let selects = document.querySelectorAll('.task_info select')
+
+					if (selects) {
+						selects.forEach(el => {
+							NiceSelect.bind(el, {
+								placeholder: el.getAttribute('data-placeholder')
+							})
+
+							el.addEventListener('change', () => el.classList.add('selected'))
+						})
+					}
+				}
+			}
+		})
 	})
 
 
