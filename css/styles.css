@@ -5090,12 +5090,22 @@ header .select_room_btn .icon
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+
+    margin-bottom: 8px;
 }
 
 
 .software .full_panel > .head .title span
 {
     color: #ba1a1a;
+}
+
+
+.software .full_panel > .head img
+{
+    display: block;
+
+    max-width: 100%;
 }
 
 
@@ -5404,6 +5414,24 @@ header .select_room_btn .icon
 
 
 
+.software .full_panel .col_left .links
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.software .full_panel .col_left .links img
+{
+    display: block;
+
+    width: 79px;
+    max-width: 100%;
+}
+
+
 .software .full_panel .col_left .links > * > a
 {
     font-family: var(--font_family2);
@@ -5585,6 +5613,14 @@ header .select_room_btn .icon
 }
 
 
+.software .full_panel .col1 .section > img
+{
+    display: block;
+
+    width: 100%;
+}
+
+
 .software .full_panel .col1 .section .title
 {
     font-family: var(--font_family2);
@@ -5642,6 +5678,20 @@ header .select_room_btn .icon
 }
 
 
+.software .full_panel .col1 .section .field + .field
+{
+    margin-top: 10px;
+}
+
+
+.software .full_panel .col1 .section .field > img
+{
+    display: block;
+
+    max-width: 100%;
+}
+
+
 .software .full_panel .col1 .section .field .label
 {
     font-family: var(--font_family2);
@@ -5660,8 +5710,10 @@ header .select_room_btn .icon
     flex-wrap: wrap;
     justify-content: center;
 
-    width: 16px;
-    height: 16px;
+    width: 13px;
+    height: 13px;
+    margin-right: 0;
+    margin-left: 5px;
 
     cursor: pointer;
 }
@@ -5677,8 +5729,8 @@ header .select_room_btn .icon
 {
     position: relative;
 
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
 
     transition: .2s linear;
 
@@ -5694,8 +5746,8 @@ header .select_room_btn .icon
 
     display: block;
 
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     margin: auto;
 
     content: '';
@@ -5780,6 +5832,8 @@ header .select_room_btn .icon
 
     position: relative;
 
+    min-width: 61px;
+
     text-align: left;
     vertical-align: middle;
     letter-spacing: -.5px;
@@ -5789,6 +5843,20 @@ header .select_room_btn .icon
 .software .full_panel .col1 .section table td + td
 {
     padding-left: 4px;
+}
+
+
+.software .full_panel .col1 .section table td:last-child
+{
+    padding-right: 10px;
+}
+
+
+.software .full_panel .col1 .section table td img
+{
+    display: block;
+
+    height: 20px;
 }
 
 
@@ -5805,7 +5873,7 @@ header .select_room_btn .icon
 
 .software .full_panel .col1 .section table td + .pad_left
 {
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 
@@ -5819,8 +5887,7 @@ header .select_room_btn .icon
 {
     position: relative;
 
-    width: 100%;
-    min-width: 65px;
+    width: 65px;
 }
 
 
@@ -5897,8 +5964,8 @@ header .select_room_btn .icon
 
     display: block;
 
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     margin: auto 0;
 
     cursor: pointer;
@@ -5907,7 +5974,7 @@ header .select_room_btn .icon
 
 .software .full_panel .col1 .section table td + .pad_left .checkbox
 {
-    left: 8px;
+    left: 7px;
 }
 
 
@@ -5929,8 +5996,8 @@ header .select_room_btn .icon
     flex-wrap: wrap;
     justify-content: center;
 
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
 
     transition: .2s linear;
 
@@ -5939,7 +6006,7 @@ header .select_room_btn .icon
 }
 
 
-.software .full_panel .col1 .section .check svg
+.software .full_panel .col1 .section .checkbox .check svg
 {
     display: block;
 
@@ -5953,7 +6020,7 @@ header .select_room_btn .icon
 }
 
 
-.software .full_panel .col1 .section input:checked ~ .check
+.software .full_panel .col1 .section .checkbox input:checked ~ .check
 {
     color: #fff;
     border-color: #2c5b9d;
@@ -5961,15 +6028,32 @@ header .select_room_btn .icon
 }
 
 
-.software .full_panel .col1 .section input:checked ~ .check svg
+.software .full_panel .col1 .section .checkbox input:checked ~ .check svg
 {
     opacity: 1;
+}
+
+
+.software .full_panel .col1 .section table + img
+{
+    display: block;
+
+    width: 100%;
+    margin-top: 8px;
 }
 
 
 .software .full_panel .col2
 {
     width: calc(100% - 424px);
+}
+
+
+.software .full_panel .col2 > img
+{
+    display: block;
+
+    width: 100%;
 }
 
 
@@ -6038,9 +6122,41 @@ header .select_room_btn .icon
     font-size: 12px;
     line-height: 100%;
 
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     margin-bottom: 16px;
 
     color: #f00;
+}
+
+
+.software .full_panel .col2 .warning img
+{
+    display: block;
+}
+
+
+.software .full_panel .schedule_table_wrap
+{
+    width: calc(100% + 12px);
+    min-height: 586px;
+    margin-right: -12px;
+
+    border: 1px solid #c3c6d2;
+}
+
+
+.software .full_panel .schedule_table_wrap + img
+{
+    display: block;
+
+    width: auto;
+    max-width: 100%;
+    margin-top: 10px;
 }
 
 
@@ -6090,6 +6206,21 @@ header .select_room_btn .icon
     color: #048387;
     background: #d6e3ff;
     box-shadow: 0 -1px 0 0 rgba(0, 0, 0, .12) inset;
+}
+
+
+.software > .bottom
+{
+    margin-top: -8px;
+    padding: 0 8px;
+}
+
+
+.software > .bottom img
+{
+    display: block;
+
+    width: 100%;
 }
 
 
