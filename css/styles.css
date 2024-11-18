@@ -5650,6 +5650,21 @@ header .select_room_btn .icon
 }
 
 
+.software .full_panel .col1 .section .cols .col.big
+{
+    width: calc(100% - 6px);
+    margin-top: 40px;
+}
+
+
+.software .full_panel .col1 .section .cols .col > img
+{
+    display: block;
+
+    max-width: 100%;
+}
+
+
 .software .full_panel .col1 .section .row
 {
     display: flex;
