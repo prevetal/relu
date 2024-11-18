@@ -431,6 +431,46 @@ document.addEventListener('DOMContentLoaded', function () {
 			? $(this).removeClass('yes').addClass('no')
 			: $(this).removeClass('no').addClass('yes')
 	})
+
+
+	// Software
+	$('.software .full_panel .col_left .links > * > a.sub_link').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').next('.sub').slideToggle(300)
+	})
+
+
+	// Accordion
+	$('body').on('click', '.accordion .accordion_item .head', function(e) {
+		e.preventDefault()
+
+		let item = $(this).closest('.accordion_item'),
+			accordion = $(this).closest('.accordion')
+
+		if (item.hasClass('active')) {
+			item.removeClass('active').find('.data').slideUp(300)
+		} else {
+			accordion.find('.accordion_item').removeClass('active')
+			accordion.find('.data').slideUp(300)
+
+			item.addClass('active').find('.data').slideDown(300)
+		}
+	})
+
+
+	// Custom select - Nice select
+	const selects = document.querySelectorAll('select')
+
+	if (selects) {
+		selects.forEach(el => {
+			NiceSelect.bind(el, {
+				placeholder: el.getAttribute('data-placeholder')
+			})
+
+			el.addEventListener('change', () => el.classList.add('selected'))
+		})
+	}
 })
 
 
