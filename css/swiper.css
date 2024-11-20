@@ -14,11 +14,12 @@
     height: 28px;
     margin: auto 0;
 
+    transition: .2s linear;
     transform: none;
 
     color: #2850a8;
     border-radius: 50%;
-    background: #e2e2e8;
+    background: #f5f5f5;
     box-shadow: 6px 6px 14px 0 rgba(1, 33, 69, .15);
 }
 
@@ -46,8 +47,8 @@
 {
     display: block;
 
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
 }
 
 .swiper-button-next .icon
@@ -60,6 +61,13 @@
 .swiper-button-prev.swiper-button-disabled
 {
     display: none;
+}
+
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover
+{
+    background: #e4e2e4;
 }
 
 

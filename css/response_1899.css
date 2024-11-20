@@ -267,6 +267,12 @@
     }
 
 
+    .bottom_panel .swiper-slide
+    {
+        width: 80px;
+    }
+
+
     .bottom_panel .item
     {
         font-size: 10px;
@@ -290,7 +296,7 @@
 
     .bottom_panel .item .thumb
     {
-        height: 54px;
+        height: 56px;
     }
 
 

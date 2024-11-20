@@ -253,11 +253,11 @@ a[data-type='ajax'] > *
 
     margin: 0 auto;
 
+    transition: .2s linear;
+
     opacity: 1;
     box-shadow: 0 0 0 8px rgba(169, 199, 255, .50);
 
-            backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     --f-button-width: 44px;
     --f-button-height: 44px;
     --f-button-border-radius: 50%;
@@ -266,14 +266,22 @@ a[data-type='ajax'] > *
     --f-button-svg-width: 16px;
     --f-button-svg-height: 16px;
     --f-button-bg: rgba(0, 72, 153, .90);
-    --f-button-hover-bg: rgba(0, 72, 153, .90);
-    --f-button-active-bg: rgba(0, 72, 153, .90);
+    --f-button-hover-bg: #a9c7ff;
+    --f-button-active-bg: #a9c7ff;
 }
 
 
 .fancybox__content > .f-button.is-close-btn svg
 {
     stroke: none;
+}
+
+
+
+.fancybox__content > .f-button.is-close-btn:hover,
+.is-compact .fancybox__content > .f-button.is-close-btn:hover
+{
+    box-shadow: 0 0 0 8px rgba(169, 199, 255, .50);
 }
 
 
@@ -614,6 +622,7 @@ header .menu_btn
 
     padding: 12px 16px;
 
+    transition: background .2s linear;
     text-transform: uppercase;
 
     color: #2850a8;
@@ -631,6 +640,12 @@ header .menu_btn .icon
 
     width: 16px;
     height: 16px;
+}
+
+
+header .menu_btn:hover
+{
+    background: #fff;
 }
 
 
@@ -673,6 +688,7 @@ header .menu .menu_item .btn
     min-height: 44px;
     padding: 12px 16px;
 
+    transition: background .2s linear;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -700,6 +716,13 @@ header .menu .menu_item .icon
 }
 
 
+header .menu .menu_item a:hover,
+header .menu .menu_item .btn:hover
+{
+    background: #fff;
+}
+
+
 
 header .select_room_btn
 {
@@ -722,6 +745,7 @@ header .select_room_btn
     min-height: 44px;
     padding: 12px 16px;
 
+    transition: background .2s linear;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -740,6 +764,12 @@ header .select_room_btn .icon
 
     width: 16px;
     height: 16px;
+}
+
+
+header .select_room_btn:hover
+{
+    background: #fff;
 }
 
 
@@ -855,6 +885,7 @@ header .select_room_btn .icon
     flex-wrap: wrap;
     justify-content: flex-start;
 
+    transition: .2s linear;
     text-decoration: none;
 
     color: #2850a8;
@@ -874,12 +905,11 @@ header .select_room_btn .icon
     width: 45px;
     height: 32px;
 
+    transition: .2s linear;
+
     border-radius: 20px;
     background: #a9c7ff;
     box-shadow: 6px 6px 14px rgba(1, 33, 69, .15);
-
-            backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 
@@ -889,6 +919,18 @@ header .select_room_btn .icon
 
     width: 7px;
     height: 10px;
+}
+
+
+.back_btn a:hover
+{
+    color: #fff;
+}
+
+.back_btn a:hover .icon
+{
+    color: #2850a8;
+    background: #f0f0f6;
 }
 
 
@@ -1335,8 +1377,8 @@ header .select_room_btn .icon
     flex-wrap: wrap;
     justify-content: space-between;
 
-    min-height: 122px;
-    padding: 11px 16px;
+    min-height: 120px;
+    padding: 10px 16px;
 
     border-radius: 12px;
     background: #f3f3f9;
@@ -1492,7 +1534,7 @@ header .select_room_btn .icon
 
     position: relative;
 
-    padding: 14px 6px 4px;
+    padding: 12px 6px 4px;
 
     cursor: pointer;
     transition: box-shadow .2s linear;
@@ -1700,6 +1742,8 @@ header .select_room_btn .icon
     width: 28px;
     height: 28px;
 
+    transition: .2s linear;
+
     color: #fff;
     border-radius: 50%;
     background: rgba(0, 72, 153, .90);
@@ -1713,6 +1757,13 @@ header .select_room_btn .icon
 
     width: 12px;
     height: 12px;
+}
+
+
+.object_modal .close_btn:hover
+{
+    background: #a9c7ff;
+    box-shadow: 0 0 0 4px rgba(169, 199, 255, .50);
 }
 
 
@@ -1927,6 +1978,8 @@ header .select_room_btn .icon
     width: 100%;
     height: 28px;
 
+    transition: .2s linear;
+
     color: #fff;
     border: 1px solid #2850a8;
     border-radius: 12px;
@@ -1934,9 +1987,24 @@ header .select_room_btn .icon
 }
 
 
+.object_modal .btn:hover
+{
+    border-color: #003571;
+    background: #003571;
+}
+
+
 .object_modal .btn.border
 {
     color: #2850a8;
+    background: none;
+}
+
+
+.object_modal .btn.border:hover
+{
+    color: #003571;
+    border-color: #003571;
     background: none;
 }
 
@@ -2224,6 +2292,8 @@ header .select_room_btn .icon
     height: auto;
     padding: 2px 16px;
 
+    transition: background .2s linear;
+
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -2240,6 +2310,12 @@ header .select_room_btn .icon
 
     width: 16px;
     height: 16px;
+}
+
+
+.object_modal .bottom .btn:hover
+{
+    background: #003571;
 }
 
 
@@ -2386,7 +2462,7 @@ header .select_room_btn .icon
 .weight .right_data
 {
     position: absolute;
-    z-index: 3;
+    z-index: 5;
     top: 84px;
     right: 20px;
 
@@ -2484,9 +2560,17 @@ header .select_room_btn .icon
 
     padding: 6px 18px;
 
+    transition: .2s linear;
+
     color: #fff;
     border-radius: 12px;
     background: #2850a8;
+}
+
+
+.weight .right_data .get_all_btn:hover
+{
+    background: #003571;
 }
 
 
@@ -2715,6 +2799,8 @@ header .select_room_btn .icon
     width: 20px;
     height: 20px;
 
+    transition: .2s linear;
+
     color: #fff;
     border-radius: 55px;
     background: rgba(0, 72, 153, .90);
@@ -2728,6 +2814,13 @@ header .select_room_btn .icon
 
     width: 10px;
     height: 10px;
+}
+
+
+.weight .interaction_data .close_btn:hover
+{
+    background: #a9c7ff;
+    box-shadow: 0 0 0 4px rgba(169, 199, 255, .50);
 }
 
 
@@ -3296,6 +3389,8 @@ header .select_room_btn .icon
     width: calc(50% - 5px);
     padding: 2px;
 
+    transition: .2s linear;
+
     color: #fff;
     border: 1px solid #2850a8;
     border-radius: 8px;
@@ -3304,9 +3399,22 @@ header .select_room_btn .icon
 }
 
 
+.weight .total_data .btn:hover
+{
+    background: #003571;
+}
+
+
 .weight .total_data .btn.border
 {
     color: #2850a8;
+    background: none;
+}
+
+
+.weight .total_data .btn.border:hover
+{
+    color: #003571;
     background: none;
 }
 
@@ -3361,12 +3469,20 @@ header .select_room_btn .icon
 
     padding: 6px 20px;
 
+    transition: background .2s linear;
+
     color: #fff;
     border-radius: 12px;
     background: #008376;
     box-shadow: 0 0 10px 0 #69bfff;
 
     mask-composite: 100%;
+}
+
+
+.exhaust .image > .btn:hover
+{
+    background: #005b51;
 }
 
 
@@ -3451,6 +3567,8 @@ header .select_room_btn .icon
     width: 20px;
     height: 20px;
 
+    transition: .2s linear;
+
     color: #fff;
     border-radius: 55px;
     background: rgba(0, 72, 153, .90);
@@ -3464,6 +3582,13 @@ header .select_room_btn .icon
 
     width: 10px;
     height: 10px;
+}
+
+
+.exhaust .interaction_data .close_btn:hover
+{
+    background: #a9c7ff;
+    box-shadow: 0 0 0 4px rgba(169, 199, 255, .50);
 }
 
 
@@ -3914,6 +4039,8 @@ header .select_room_btn .icon
 
     padding: 2px 16px;
 
+    transition: background .2s linear;
+
     color: #fff;
     border-radius: 8px;
     background: #2850a8;
@@ -3932,6 +4059,12 @@ header .select_room_btn .icon
 }
 
 
+.exhaust .interaction_data .bottom .btn:hover
+{
+    background: #003571;
+}
+
+
 .exhaust .interaction_data .action_btn
 {
     font-size: 11px;
@@ -3942,10 +4075,18 @@ header .select_room_btn .icon
     margin-top: 20px;
     padding: 2px 16px;
 
+    transition: background .2s linear;
+
     color: #fff;
     border-radius: 8px;
     background: #2850a8;
     box-shadow: 6px 6px 14px 0 rgba(1, 33, 69, .15);
+}
+
+
+.exhaust .interaction_data .action_btn:hover
+{
+    background: #003571;
 }
 
 
@@ -4095,9 +4236,17 @@ header .select_room_btn .icon
 
     padding: 6px 18px;
 
+    transition: .2s linear;
+
     color: #fff;
     border-radius: 12px;
     background: #2850a8;
+}
+
+
+.exhaust .right_data .get_all_btn:hover
+{
+    background: #003571;
 }
 
 
@@ -4344,9 +4493,6 @@ header .select_room_btn .icon
     border: 2px solid #fff;
     border-radius: 50%;
     background: rgba(40, 80, 168, .90);
-
-            backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 
@@ -4412,7 +4558,7 @@ header .select_room_btn .icon
 
     padding-bottom: 30px;
 
-    transition: color .2s linear;
+    transition: .2s linear;
     text-decoration: none;
 
     color: rgba(255,255,255,.7);
@@ -4460,6 +4606,7 @@ header .select_room_btn .icon
 .select_room_modal .items a.active
 {
     color: rgba(255,255,255,.9);
+    border-color: #fff;
 }
 
 
@@ -5141,6 +5288,12 @@ header .select_room_btn .icon
 }
 
 
+.chromatograph .main_data .btn:hover
+{
+    background: #003571;
+}
+
+
 .chromatograph .main_data .btn.disabled
 {
     pointer-events: none;
@@ -5191,6 +5344,12 @@ header .select_room_btn .icon
 
     width: 16px;
     height: 16px;
+}
+
+
+.chromatograph .main_data .default_btn:hover
+{
+    background: #003571;
 }
 
 
@@ -5315,6 +5474,15 @@ header .select_room_btn .icon
 }
 
 
+.software .top_panel .btn.disabled
+{
+    pointer-events: none;
+
+    opacity: .3;
+    color: #f0f0f6;
+}
+
+
 .software .top_panel .name
 {
     font-size: 11px;
@@ -5344,8 +5512,21 @@ header .select_room_btn .icon
     margin-left: auto;
     padding: 0 16px;
 
+    transition: .2s linear;
     letter-spacing: 1px;
 
+    background: #008376;
+}
+
+
+.software .top_panel .check_btn:hover
+{
+    background: #005b51;
+}
+
+
+.software .top_panel .check_btn:active
+{
     background: #008376;
 }
 
@@ -5354,7 +5535,9 @@ header .select_room_btn .icon
 {
     pointer-events: none;
 
-    opacity: .4;
+    opacity: .25;
+    color: rgba(0, 0, 0, .5);
+    background: #fff;
 }
 
 
@@ -5428,6 +5611,7 @@ header .select_room_btn .icon
     flex-wrap: wrap;
     justify-content: space-between;
 
+    transition: color .2s linear;
     text-decoration: none;
 
     color: currentColor;
@@ -5450,6 +5634,13 @@ header .select_room_btn .icon
     height: 20px;
 
     transform: rotate(-90deg);
+}
+
+
+.software .data > .col_left .links a:hover,
+.software .data > .col_left .links a.active
+{
+    color: #048387;
 }
 
 
@@ -6805,11 +6996,24 @@ header .select_room_btn .icon
     margin-top: 24px;
     padding: 8px;
 
+    transition: background .2s linear;
     letter-spacing: .3px;
 
     color: #fff;
     border-radius: 12px;
     background: #2850a8;
+}
+
+
+.modal.error_modal .close_btn:hover
+{
+    background: #003571;
+}
+
+
+.modal.error_modal .f-button.is-close-btn
+{
+    display: none !important;
 }
 
 
